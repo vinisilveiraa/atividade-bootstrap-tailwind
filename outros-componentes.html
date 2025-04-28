@@ -1,12 +1,224 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outros Componentes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
+
 <body>
-    <a href="index.html">link index</a>
-    <a href="tailwind.html">link tailwind</a>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid col-md-8">
+            <a class="navbar-brand" href="#">SaborCaseiro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tailwind.html">Tailwind</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outros-componentes.html">Outros Componentes</a>
+                    </li>
+
+                    </span>
+                    </button>
+                    </li>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- nao usados -->
+
+    <div class="container mt-5 col-md-12">
+
+        <div class="row gap-4">
+            <div class="col mb-5 border border">
+                <h1>Botoes Agrupados</h1>
+                <p>nao tive motivo pra usar</p>
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">Left</button>
+                    <button type="button" class="btn btn-primary">Middle</button>
+                    <button type="button" class="btn btn-primary">Right</button>
+                </div>
+            </div>
+
+            <div class="col mb-5 border border">
+                <h1>Collapse</h1>
+                <p>usei apenas no accordion</p>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Button with data-bs-target
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 border border">
+                <h1>List Group</h1>
+                <p>tabelas sao mais interessantes</p>
+                <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                </ul>
+            </div>
+
+            <div class="col mb-5 border border">
+                <h1>OFF CANVAS</h1>
+                <p>nao acho que funcione pra um restaurante</p>
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    Link with href
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 border">
+                <h1>Pagination</h1>
+                <p>nao muito util em paginas pequenas</p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col mb-5 border">
+                <h1>PlaceHolders</h1>
+                <p>ja usei o card normal</p>
+                <div class="card" aria-hidden="true">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 border">
+                <h1>Popovers</h1>
+                <p>nao sei como funciona, usei o chatgpt pra fazer o tooltip funcionar mas esse aqui nao entendi nada e preferi deixar de lado</p>
+                
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+                <script>
+                    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+                    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+                </script>
+
+            </div>
+
+            <div class="col mb-5 border">
+                <h1>Scrollspy</h1>
+                <p>sem motivo pra usar esse, igual o das pagina</p>
+                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">First</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                    <h4 id="scrollspyHeading1">First heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading2">Second heading</h4>
+                    <p>...</p>
+                  </div>
+            </div>
+
+            <div class="col mb-5 border">
+                <h1>Spinner</h1>
+                <p>poderia ter incluido em algum lugar</p>
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            </div>
+
+
+
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+
+
 </body>
+
 </html>
