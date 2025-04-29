@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-<html lang="-pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tailwind</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline text-clifford">
-        Hello world!
-    </h1>
-    <a href="index.html">link index</a>
-    <a href="outros-componentes.html">link componentes</a>
+<body class="bg-gray-100">
+
+    <div class="flex justify-center items-center gap-20 p-5 mb-5 bg-gray-300">
+
+        <a class="hover:bg-gray-200 bg-white border rounded-2xl px-4 py-1" href="index.html">link index</a>
+        <a class="hover:bg-gray-200 bg-white border rounded-2xl px-4 py-1" href="outros-componentes.html">link componentes</a>
+
+    </div>
+
+    <div class="flex flex-wrap w-full justify-center items-center gap-20"> 
+
+        <div class="max-w-xs rounded-xl overflow-hidden border border-width-2 border-gray-200 bg-white">
+            <!-- max-w = max width / rounded = borda -->
+
+            <img class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBM7VxHufca3A_10Up7zX5R-CszvaOojSAvg&s" alt="Imagem do card">
+            <!-- object-cover = imagem cobre o espaço do card -->
+
+            <div class="p-5">
+              <h5 class="text-xl font-semibold mb-2">Título do Card</h5>
+              <p class="text-gray-700 text-base mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nihil enim veniam iste aut reprehenderit.
+              </p>
+
+              <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+                <!-- 
+                    / inline-block = pra poder usa o padding 
+                    / transition = bagulho que deixa lento 
+                    / px-py = padding x e y
+                 -->
+                Ir a algum lugar
+              </a>
+
+            </div>
+          </div> <!-- fim do card1 -->
+
+          <div class="max-w-xs rounded-xl overflow-hidden border border-width-2 border-gray-200 bg-white">
+            <img class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBM7VxHufca3A_10Up7zX5R-CszvaOojSAvg&s" alt="Imagem do card">
+            <div class="p-5">
+              <h5 class="text-xl font-semibold mb-2">Tratores Maneiros</h5>
+              <p class="text-gray-700 text-base mb-4">
+                Fotos insanas de tratores maneiros tratores brabos maravilhosos estupendos tratores tratores amamos tratores
+              </p>
+
+              <a href="#" class="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                Site dos tratores fortes
+              </a>
+              
+            </div>
+          </div> <!-- fim do card2 -->
+          
+          <div class="max-w-xs rounded-xl overflow-hidden border border-width-2 border-gray-200 bg-white">
+            <img class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBM7VxHufca3A_10Up7zX5R-CszvaOojSAvg&s" alt="Imagem do card">
+            <div class="p-5">
+              <h5 class="text-xl font-semibold mb-2">Tratores Maneiros</h5>
+              <p class="text-gray-700 text-base mb-4">
+                Fotos insanas de tratores maneiros tratores brabos maravilhosos estupendos tratores tratores amamos tratores
+              </p>
+
+              <a href="#" class="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                Site para tratores fodas
+              </a>
+              
+            </div>
+          </div> <!-- fim do card2 -->
+
+          
+    </div> <!-- flex -->
+
+    
+
+
 </body>
 </html>
